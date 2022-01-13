@@ -34,6 +34,33 @@ contributor:
   roleName:
   - dcite:Author
   schemaKey: Person
+- awardNumber: ' MH54671, MH107396, and NS 090583'
+  contactPoint: []
+  identifier: https://ror.org/01cwqze88
+  includeInCitation: false
+  name: National Institutes of Health
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.nih.gov/
+- awardNumber: NSF PIRE grant (#1545858)
+  contactPoint: []
+  identifier: https://ror.org/021nxhr62
+  includeInCitation: false
+  name: National Science Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: https://www.nsf.gov/
+- awardNumber: '351109'
+  contactPoint: []
+  identifier: https://ror.org/01cmst727
+  includeInCitation: false
+  name: Simons Foundation
+  roleName:
+  - dcite:Funder
+  schemaKey: Organization
+  url: http://www.thesimonsfoundation.ca/
 dateCreated: '2022-01-11T21:16:19.103724+00:00'
 description: The hippocampus constructs a map of the environment. How this “cognitive
   map” is utilized by other brain regions to guide behavior remains unexplored. To
