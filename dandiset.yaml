@@ -31,9 +31,9 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 30045822032
-  numberOfFiles: 7
-  numberOfSubjects: 1
+  numberOfBytes: 414091573651
+  numberOfFiles: 40
+  numberOfSubjects: 4
   schemaKey: AssetsSummary
   species:
   - identifier: http://purl.obolibrary.org/obo/NCBITaxon_10116
@@ -45,6 +45,7 @@ assetsSummary:
   - ElectricalSeries
   - LFP
   - Units
+  - SpatialSeries
 citation: Tingley, David; Buzsáki, Gyórgy (2022) Transformation of a Spatial Map across
   the Hippocampal-Lateral Septal Circuit (Version draft) [Data set]. DANDI archive.
   https://dandiarchive.org/dandiset/000213/draft
