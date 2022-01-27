@@ -47,8 +47,8 @@ assetsSummary:
   - Units
   - SpatialSeries
 citation: Tingley, David; Buzsáki, Gyórgy (2022) Transformation of a Spatial Map across
-  the Hippocampal-Lateral Septal Circuit (Version draft) [Data set]. DANDI archive.
-  https://dandiarchive.org/dandiset/000213/draft
+  the Hippocampal-Lateral Septal Circuit (Version 0.220127.1738) [Data set]. DANDI
+  archive. https://doi.org/10.48324/dandi.000213/0.220127.1738
 contributor:
 - affiliation: []
   includeInCitation: true
@@ -92,6 +92,7 @@ contributor:
   schemaKey: Organization
   url: http://www.thesimonsfoundation.ca/
 dateCreated: '2022-01-11T21:16:19.103724+00:00'
+datePublished: '2022-01-27T17:38:04.250539+00:00'
 description: The hippocampus constructs a map of the environment. How this “cognitive
   map” is utilized by other brain regions to guide behavior remains unexplored. To
   examine how neuronal firing patterns in the hippocampus are transmitted and transformed,
@@ -104,8 +105,9 @@ description: The hippocampus constructs a map of the environment. How this “co
   spatial tuning arises through the dynamic weighting of CA1 and CA3 cell assemblies.
   Our findings demonstrate that transformation of the hippocampal spatial map depends
   on higher-order theta-dependent neuronal sequences.
+doi: 10.48324/dandi.000213/0.220127.1738
 ethicsApproval: []
-id: DANDI:000213/draft
+id: DANDI:000213/0.220127.1738
 identifier: DANDI:000213
 keywords:
 - hippocampus
@@ -114,9 +116,21 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000213/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000213/0.220127.1738/assets.yaml
 name: Transformation of a Spatial Map across the Hippocampal-Lateral Septal Circuit
 protocol: []
+publishedBy:
+  endDate: '2022-01-27T17:38:04.250539+00:00'
+  id: urn:uuid:e8524ad9-f757-4599-8a98-683f27f5829d
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2022-01-27T17:38:04.250539+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:895a0b00-bca5-4dce-b27c-877588dec111
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1016/j.neuron.2018.04.028
   name: Transformation of a Spatial Map across the Hippocampal-Lateral Septal Circuit
@@ -128,6 +142,6 @@ repository: https://dandiarchive.org/
 schemaKey: Dandiset
 schemaVersion: 0.6.0
 studyTarget: []
-url: https://dandiarchive.org/dandiset/000213/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000213/0.220127.1738
+version: 0.220127.1738
 wasGeneratedBy: []
