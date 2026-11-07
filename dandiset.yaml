@@ -24,19 +24,19 @@ assetsSummary:
     name: Neurodata Without Borders (NWB)
     schemaKey: StandardsType
   measurementTechnique:
-  - name: multi electrode extracellular electrophysiology recording technique
-    schemaKey: MeasurementTechniqueType
   - name: spike sorting technique
     schemaKey: MeasurementTechniqueType
   - name: behavioral technique
     schemaKey: MeasurementTechniqueType
   - name: signal filtering technique
     schemaKey: MeasurementTechniqueType
+  - name: multi electrode extracellular electrophysiology recording technique
+    schemaKey: MeasurementTechniqueType
   - name: analytical technique
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1399462358341
+  numberOfBytes: 1429136660109
   numberOfFiles: 66
   numberOfSubjects: 6
   schemaKey: AssetsSummary
@@ -46,13 +46,13 @@ assetsSummary:
     schemaKey: SpeciesType
   variableMeasured:
   - Position
-  - CompassDirection
-  - ElectricalSeries
+  - SpatialSeries
   - LFP
   - Units
-  - SpatialSeries
+  - CompassDirection
   - ProcessingModule
   - ElectrodeGroup
+  - ElectricalSeries
 citation: Tingley, David; Buzsáki, György (2026) Transformation of a Spatial Map across
   the Hippocampal-Lateral Septal Circuit (Version draft) [Data set]. DANDI Archive.
   https://dandiarchive.org/dandiset/000213/draft
