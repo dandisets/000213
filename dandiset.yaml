@@ -36,8 +36,8 @@ assetsSummary:
     schemaKey: MeasurementTechniqueType
   - name: surgical technique
     schemaKey: MeasurementTechniqueType
-  numberOfBytes: 1301230887240
-  numberOfFiles: 66
+  numberOfBytes: 1119327745318
+  numberOfFiles: 65
   numberOfSubjects: 6
   schemaKey: AssetsSummary
   species:
@@ -49,10 +49,10 @@ assetsSummary:
   - SpatialSeries
   - LFP
   - Units
-  - CompassDirection
   - ProcessingModule
   - ElectrodeGroup
   - ElectricalSeries
+  - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Transformation of a Spatial Map across
   the Hippocampal-Lateral Septal Circuit (Version draft) [Data set]. DANDI Archive.
   https://dandiarchive.org/dandiset/000213/draft
