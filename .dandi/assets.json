@@ -16050,15 +16050,15 @@
 },
 {
 "asset_id":
-"ae81321f-4cfb-42f6-8cd5-370b58e521ba",
+"0ca5adfa-08dd-409c-85f5-5ec861c252bb",
 "blob":
-"92649818-eeab-4fa2-9e93-09e2e7c27821",
+"9e369fd1-eb5a-4085-a3f7-5782166b86c0",
 "created":
-"2022-01-16T18:45:47.768078Z",
+"2026-11-07T00:50:44.386349Z",
 "metadata":
 {
 "@context":
-"https://raw.githubusercontent.com/dandi/schema/master/releases/0.6.0/context.json",
+"https://raw.githubusercontent.com/dandi/schema/master/releases/0.7.0/context.json",
 "access":
 [
 {
@@ -16072,51 +16072,53 @@
 [
 {
 "name":
-"electrophysiological approach",
+"behavioral approach",
 "schemaKey":
 "ApproachType"
 },
 {
 "name":
-"behavioral approach",
+"electrophysiological approach",
 "schemaKey":
 "ApproachType"
 }
 ],
 "blobDateModified":
-"2022-01-16T12:33:56.311000+00:00",
+"2026-11-07T00:38:21.861213Z",
 "contentSize":
-109654763597,
+82588004657,
 "contentUrl":
 [
-"https://api.dandiarchive.org/api/assets/ae81321f-4cfb-42f6-8cd5-370b58e521ba/download/",
-"https://dandiarchive.s3.amazonaws.com/blobs/926/498/92649818-eeab-4fa2-9e93-09e2e7c27821"
+"https://api.dandiarchive.org/api/assets/0ca5adfa-08dd-409c-85f5-5ec861c252bb/download/",
+"https://dandiarchive.s3.amazonaws.com/blobs/9e3/69f/9e369fd1-eb5a-4085-a3f7-5782166b86c0"
 ],
 "dateModified":
-"2022-01-16T18:13:29.848469+00:00",
-"datePublished":
-"2022-01-27T17:38:12.741011+00:00",
+"2026-11-07T00:45:15.002791Z",
 "digest":
 {
 "dandi:dandi-etag":
-"97128c9ec71e4b6250491e01a7a41329-1634",
+"1b0d4d20ad49aa10799b4b41d7d5b747-1231",
 "dandi:sha2-256":
-"0438b3ceab218b1ac6a8211b147cc4bf00d6de5afafaf8a42499ba6270d5b9c5"
+"2ea36ebd1cf9a2f564dbfb56fc39d71333373f56bc31bd548fbde45ad46aca33"
 },
 "encodingFormat":
 "application/x-nwb",
 "id":
-"dandiasset:ae81321f-4cfb-42f6-8cd5-370b58e521ba",
+"dandiasset:0ca5adfa-08dd-409c-85f5-5ec861c252bb",
 "identifier":
-"ae81321f-4cfb-42f6-8cd5-370b58e521ba",
+"0ca5adfa-08dd-409c-85f5-5ec861c252bb",
+"keywords":
+[
+"lateral septum",
+"hippocampus",
+"CA1",
+"CA3",
+"theta phase coding",
+"place cells",
+"silicon probe"
+],
 "measurementTechnique":
 [
-{
-"name":
-"spike sorting technique",
-"schemaKey":
-"MeasurementTechniqueType"
-},
 {
 "name":
 "behavioral technique",
@@ -16125,60 +16127,83 @@
 },
 {
 "name":
+"surgical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
 "signal filtering technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"analytical technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"multi electrode extracellular electrophysiology recording technique",
+"schemaKey":
+"MeasurementTechniqueType"
+},
+{
+"name":
+"spike sorting technique",
 "schemaKey":
 "MeasurementTechniqueType"
 }
 ],
 "path":
 "sub-DT9/sub-DT9_ses-20170509-468um-36um-170509-103451_behavior+ecephys.nwb",
-"publishedBy":
-{
-"endDate":
-"2022-01-27T17:38:12.741011+00:00",
-"id":
-"urn:uuid:d575a34c-2a34-4a0b-b58b-f7a4884e147a",
-"name":
-"DANDI publish",
-"schemaKey":
-"PublishActivity",
-"startDate":
-"2022-01-27T17:38:12.741011+00:00",
-"wasAssociatedWith":
+"relatedResource":
 [
 {
-"id":
-"urn:uuid:a301ecb5-7559-4d67-bb90-0d0c70da99a2",
 "identifier":
-"RRID:SCR_017571",
-"name":
-"DANDI API",
+"https://doi.org/10.1016/j.neuron.2018.04.028",
+"relation":
+"dcite:IsDescribedBy",
 "schemaKey":
-"Software",
-"version":
-"0.1.0"
+"Resource"
 }
-]
-},
-"repository":
-"https://dandiarchive.org/",
+],
 "schemaKey":
 "Asset",
 "schemaVersion":
-"0.6.0",
+"0.7.0",
 "variableMeasured":
 [
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"CompassDirection"
+"LFP"
 },
 {
 "schemaKey":
 "PropertyValue",
 "value":
-"LFP"
+"Position"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ProcessingModule"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectrodeGroup"
+},
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"ElectricalSeries"
 },
 {
 "schemaKey":
@@ -16190,16 +16215,39 @@
 "schemaKey":
 "PropertyValue",
 "value":
-"Position"
+"SpatialSeries"
 }
 ],
 "wasAttributedTo":
 [
 {
+"age":
+{
+"schemaKey":
+"PropertyValue",
+"unitText":
+"ISO-8601 duration",
+"value":
+"/",
+"valueReference":
+{
+"schemaKey":
+"PropertyValue",
+"value":
+"dandi:BirthReference"
+}
+},
 "identifier":
-"DT9",
+"src",
 "schemaKey":
 "Participant",
+"sex":
+{
+"name":
+"Unknown",
+"schemaKey":
+"SexType"
+},
 "species":
 {
 "identifier":
@@ -16208,6 +16256,13 @@
 "Rattus norvegicus - Norway rat",
 "schemaKey":
 "SpeciesType"
+},
+"strain":
+{
+"name":
+"Long-Evans",
+"schemaKey":
+"StrainType"
 }
 }
 ],
@@ -16215,7 +16270,9 @@
 [
 {
 "description":
-"The hippocampus constructs a map of the environment. How this “cognitive map” is utilized by other brain regions to guide behavior remains unexplored. To examine how neuronal firing patterns in the hippocampus are transmitted and transformed, we recorded neurons in its principal subcortical target, the lateral septum (LS). We observed that LS neurons carry reliable spatial information in the phase of action potentials, relative to hippocampal theta oscillations, while the firing rates of LS neurons remained uninformative. Furthermore, this spatial phase code had an anatomical microstructure within the LS and was bound to the hippocampal spatial code by synchronous gamma frequency cell assemblies. Using a data-driven model, we show that rate-independent spatial tuning arises through the dynamic weighting of CA1 and CA3 cell assemblies. Our findings demonstrate that transformation of the hippocampal spatial map depends on higher-order theta-dependent neuronal sequences.",
+"Rat src, recorded with two silicon probes in the right hemisphere, one in the lateral septal nucleus ('ls') and one in the hippocampal formation ('hpc'), in the home cage before and after running on a maze. Task: both alternation (263 trials). The session name carries the depths 468 um and 36 um (sessionInfo.depth is 468, the first); which probe each depth belongs to and what it is measured from are not stored in the source. The session start time is the start of the recording, from the session name.",
+"endDate":
+"2017-05-09T17:55:25.332000-04:00",
 "identifier":
 "20170509_468um_36um_170509_103451",
 "name":
@@ -16228,12 +16285,16 @@
 {
 "description":
 "Metadata generated by DANDI cli",
+"endDate":
+"2026-11-07T00:45:15.002761Z",
 "id":
-"urn:uuid:0e92ff49-d8f5-405e-af5d-ac232b1d702e",
+"urn:uuid:5eb793e0-346d-4134-a2cb-83a4d22c20ee",
 "name":
 "Metadata generation",
 "schemaKey":
 "Activity",
+"startDate":
+"2026-11-07T00:45:14.200958Z",
 "wasAssociatedWith":
 [
 {
@@ -16246,18 +16307,18 @@
 "url":
 "https://github.com/dandi/dandi-cli",
 "version":
-"0.34.0"
+"0.81.0"
 }
 ]
 }
 ]
 },
 "modified":
-"2022-01-16T20:24:52.788232Z",
+"2026-11-07T00:50:44.386362Z",
 "path":
 "sub-DT9/sub-DT9_ses-20170509-468um-36um-170509-103451_behavior+ecephys.nwb",
 "size":
-109654763597
+82588004657
 },
 {
 "asset_id":
