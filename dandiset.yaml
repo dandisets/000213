@@ -54,8 +54,8 @@ assetsSummary:
   - Units
   - CompassDirection
 citation: Tingley, David; Buzsáki, György (2026) Transformation of a Spatial Map across
-  the Hippocampal-Lateral Septal Circuit (Version draft) [Data set]. DANDI Archive.
-  https://dandiarchive.org/dandiset/000213/draft
+  the Hippocampal-Lateral Septal Circuit (Version 0.261109.2219) [Data set]. DANDI
+  Archive. https://doi.org/10.48324/dandi.000213/0.261109.2219
 contributor:
 - affiliation:
   - identifier: https://ror.org/005dvqh91
@@ -124,6 +124,7 @@ contributor:
   - dcite:DataCurator
   schemaKey: Person
 dateCreated: '2022-01-11T21:16:19.103724+00:00'
+datePublished: '2026-11-09T22:19:52.250758+00:00'
 description: The hippocampus constructs a map of the environment. How this “cognitive
   map” is utilized by other brain regions to guide behavior remains unexplored. To
   examine how neuronal firing patterns in the hippocampus are transmitted and transformed,
@@ -136,8 +137,9 @@ description: The hippocampus constructs a map of the environment. How this “co
   spatial tuning arises through the dynamic weighting of CA1 and CA3 cell assemblies.
   Our findings demonstrate that transformation of the hippocampal spatial map depends
   on higher-order theta-dependent neuronal sequences.
+doi: 10.48324/dandi.000213/0.261109.2219
 ethicsApproval: []
-id: DANDI:000213/draft
+id: DANDI:000213/0.261109.2219
 identifier: DANDI:000213
 keywords:
 - hippocampus
@@ -146,8 +148,20 @@ keywords:
 license:
 - spdx:CC-BY-4.0
 manifestLocation:
-- https://api.dandiarchive.org/api/dandisets/000213/versions/draft/assets/
+- https://dandiarchive.s3.amazonaws.com/dandisets/000213/0.261109.2219/assets.yaml
 name: Transformation of a Spatial Map across the Hippocampal-Lateral Septal Circuit
+publishedBy:
+  endDate: '2026-11-09T22:19:52.250758+00:00'
+  id: urn:uuid:7c89f9f6-90be-4bc5-aeb8-9786ecdf7935
+  name: DANDI publish
+  schemaKey: PublishActivity
+  startDate: '2026-11-09T22:19:52.250758+00:00'
+  wasAssociatedWith:
+  - id: urn:uuid:a7c15be3-5cee-433b-9a54-43670e908d43
+    identifier: RRID:SCR_017571
+    name: DANDI API
+    schemaKey: Software
+    version: 0.1.0
 relatedResource:
 - identifier: https://doi.org/10.1016/j.neuron.2018.04.028
   name: Transformation of a Spatial Map across the Hippocampal-Lateral Septal Circuit
@@ -156,9 +170,50 @@ relatedResource:
   resourceType: dcite:JournalArticle
   schemaKey: Resource
   url: https://doi.org/10.1016/j.neuron.2018.04.028
+releaseNotes: "## Changes since version 0.250624.0438\n\nAll 67 files were re-converted
+  from the lab's source files with a new NeuroConv conversion ([catalystneuro/buzsaki-lab-to-nwb](https://github.com/catalystneuro/buzsaki-lab-to-nwb),
+  PRs [#91](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/91), [#104](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/104),
+  [#105](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/105), [#111](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/111)
+  and [#114](https://github.com/catalystneuro/buzsaki-lab-to-nwb/pull/114)). The conversion
+  fixes problems found by a reproduction attempt ([issue #81](https://github.com/catalystneuro/buzsaki-lab-to-nwb/issues/81)).
+  The same sessions and file names are kept.\n\n**Corrections**\n\n- **Trial labels.**
+  The earlier conversion sorted the trial rows by start time but not their labels,
+  so most trials carried another trial's `direction` and `trial_type` (DT2 0221: 117
+  of 121 rows). Rows and labels are now sorted together; repeated and overlapping
+  trials are kept as in the source and counted in the description.\n- **Position.**
+  x, y and z from the source (z was a copy of y; DT2 has no z). OptiTrack positions
+  are in metres, with `conversion` 0.001 where the lab stored millimetres (the earlier
+  conversion was NaN, and DT8 0217 had metre values labelled mm). DT2's LED tracking
+  is in camera pixels, with no scale to metres in the source. Head orientation is
+  a dimensionless quaternion; DT2's yaw is a CompassDirection in radians.\n- **Timestamps.**
+  The lab's tracking timestamps are rounded to 5 significant digits (whole seconds
+  after 10,000 s). Where every value is a 30 Hz frame time rounded, the frame times
+  are written instead, so samples no longer share timestamps (this includes DT2 0222
+  and 0226, and the trials' `linearized_position_timestamps`).\n- **Units.** Spike
+  times are sorted (the source has unsorted spikes; the units description lists the
+  units affected). Each unit has its shank, cluster, region, largest-waveform channel
+  and waveform, and isolation metrics where the lab computed them for the same sorting.
+  Resolution 1/20,000 s.\n- **Electrodes.** Regions come from the lab's sessionInfo
+  (DT2's electrodes were \"unknown\"); `hpc` is written as hippocampal formation and
+  the lab's label is kept in a `region` column. The theta, LFP, CA1, CA3, LS and reference
+  channels are marked.\n- **Subject.** `subject_id` is the rat (DT2, DT5, DT7, DT8,
+  DT9); sex U, since the papers had 3 male and 2 female rats without saying which.\n
+  \n**Additions**\n\n- **Sleep states** wherever the lab's `SleepState.states.mat`
+  exists, with HED tags (WAKE: Awake; NREM and REM: Asleep).\n- **Trial conditions**
+  with each condition's linearization template, and the lab's linearized position
+  per trial.\n- **Ontology terms** (HERD) for the species and the recorded regions
+  (lateral septal nucleus, hippocampal formation, CA1, CA3).\n- **Signals** are chunked
+  for streaming (about 32 MB chunks of up to 16 channels, instead of 500 samples by
+  96 channels). The LFP and wide-band signal are the earlier files' data, checked
+  to be whole steps and stored as int16 in channel order, since the lab's `.lfp` and
+  `.dat` are not on its share.\n\n**Known gaps**\n\n- The rats' ages are not in the
+  papers or the source.\n- Electrode positions are not stored: every `.prb` file places
+  sites by list position with one template, so they do not give the geometry. Which
+  probe each depth in a session name belongs to is not stored either.\n- Most hippocampal
+  units are labelled `hpc`, not CA1 or CA3, as in the source."
 repository: https://dandiarchive.org
 schemaKey: Dandiset
 schemaVersion: 0.6.0
-url: https://dandiarchive.org/dandiset/000213/draft
-version: draft
+url: https://dandiarchive.org/dandiset/000213/0.261109.2219
+version: 0.261109.2219
 wasGeneratedBy: []
